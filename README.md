@@ -12,7 +12,7 @@ Package description: This is a simple package to allow using Senangpay Payment G
 
 Install via composer
 ```
-composer require jomos/senang-pay
+composer require tajulsharby/senangpay
 ```
 
 ### Register Service Provider
