@@ -1,0 +1,51 @@
+{
+  "name": "jomos/senang-pay",
+  "description": "This package will provide facade and easy integration with SenangPay payment gateway.",
+  "license": "MIT",
+  "keywords": [
+    "Senangpay",
+    "SenangPay"
+  ],
+  "authors": [
+    {
+      "name": "Apit John Kedekut Ismail",
+      "email": "idham@jomos.com.my"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "illuminate/support": "~5.5.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.5.0",
+    "phpunit/phpunit": "^5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jomos\\SenangPay\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jomos\\SenangPay\\Tests\\": "tests"
+    },
+    "files": [
+      "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
+    ]
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Jomos\\SenangPay\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
